@@ -17,7 +17,7 @@ const EndTime = ({ endTime, setEndTime, avelibleTime, startTime, times }) => {
         onMouseLeave={() => (startTime ? setOpen(false) : null)}
         className="floors">
         <p>
-          Номер переговорки <span>*</span>
+          Конец <span>*</span>
         </p>
         <div className={`floors__floor ${startTime ? '' : 'disabled'}`}>
           {endTime}

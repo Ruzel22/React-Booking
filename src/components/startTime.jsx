@@ -14,7 +14,7 @@ const StartTime = ({ activeDate, startTime, setStartTime, avelibleTime }) => {
         onMouseLeave={() => (activeDate ? setOpen(false) : null)}
         className="floors ">
         <p>
-          Номер переговорки <span>*</span>
+          Начало <span>*</span>
         </p>
         <div className={`floors__floor ${activeDate ? '' : 'disabled'}`}>
           {startTime}
