@@ -38,6 +38,8 @@ function App() {
         endTime: endTime,
         comment: comment,
       });
+      alert('Место забронировано!');
+
       console.log(json);
     } else {
       alert('Заполните все поля формы!');
