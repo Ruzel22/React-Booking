@@ -27,7 +27,7 @@ function App() {
     setComment('');
   };
 
-  const onSent = () => {
+  const onSend = () => {
     if (activeTower && activeFloor && activeConference && activeDate && startTime && endTime) {
       const json = JSON.stringify({
         tower: activeTower,
@@ -85,7 +85,7 @@ function App() {
           <button onClick={() => onClear()} className="clear">
             Очистить
           </button>
-          <button onClick={() => onSent()} className="send">
+          <button onClick={() => onSend()} className="send">
             Отправить
           </button>
         </div>

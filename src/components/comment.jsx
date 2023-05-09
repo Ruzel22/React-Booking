@@ -3,7 +3,6 @@ import React from 'react';
 const Comment = ({ comment, setComment, endTime }) => {
   const changeValue = (event) => {
     setComment(event.target.value);
-    console.log(comment);
   };
   return (
     <div className="comment">

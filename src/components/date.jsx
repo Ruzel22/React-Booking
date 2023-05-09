@@ -16,11 +16,13 @@ const Date = ({ activeFloor, activeDate, setActiveDate, dates }) => {
       <p>
         Дата <span>*</span>
       </p>
-      <div className={`floors__floor ${activeFloor ? '' : 'disabled'}`}>
+      {/* <div className={`floors__floor ${activeFloor ? '' : 'disabled'}`}>
         {activeDate ? activeDate : 'Выберите дату'}
         {activeDate ? '' : <img width={20} height={20} src={'/img/Arrow-down.svg'}></img>}
-      </div>
-      <ul
+      </div> */}
+      <input className="date-input" type="date" min="2023-05-05" max="2023-05-20" />
+
+      {/* <ul
         className="floors__list"
         style={
           isOpen ? { visibility: 'visible', opacity: '1' } : { visibility: 'hidden', opacity: '0' }
@@ -30,7 +32,7 @@ const Date = ({ activeFloor, activeDate, setActiveDate, dates }) => {
             {value}
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 };
